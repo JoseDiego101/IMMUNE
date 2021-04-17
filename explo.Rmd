@@ -5,26 +5,84 @@ date: "17/4/2021"
 output: word_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+Exercise 3
+
+```{r}
+1+20-5
+30*40
+10^4
+(34-340)*50
+30%%4 + 40%/% 9
 ```
 
-## R Markdown
+Exercise 4
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r}
+a <- 5L
+typeof(a)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```
+```{r}
+x <- 1:10
+y <- c(4,5,1,-1,0)
+z <- 10:1
+name <- c('J','O','S','E')
+senten <- c('Aprendindo R', 'Tenemos varios ejercicios en clase')
+w <- seq(from = 5, to = 100, by =5)
+ones <- rep(1, 10)
 ```
 
-## Including Plots
+```{r}
+operation <- function(vec){
+  return(sum(vec))
+}
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+x <- 1:5
+operation(x)
+```
+
+
+```{r}
+sum(x)
+```
+
+
+Create a vector called "x" with the following values: 36, 28, 19, 22, 27, 28, 30, 31, 38, 46, 40, 29, 21, 28, 39, 46, 43, 27, 30 and 54
+
+```{r}
+x <- c(36, 28, 19, 22, 27, 28, 30, 31, 38, 46, 40, 29, 21, 28, 39, 46, 43, 27, 30, 54)
+```
+
+
+●Prints the vector size (20)
+
+```{r}
+print(length(x))
+```
+
+●Print its average without using the meanfunction (33.1)
+```{r}
+sum(x)/length(x)
+```
+
+
+●Print its range (maximum value minus minimum) (35)
+
+```{r}
+print(max(x) - min(x))
+```
+
+
+●Print its variance without using the varfunction (86.11)
+```{r}
+(x - mean(x))^2
+```
+
+
+
+
+
