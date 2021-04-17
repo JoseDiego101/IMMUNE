@@ -30,6 +30,7 @@ name <- c('J','O','S','E')
 senten <- c('Aprendindo R', 'Tenemos varios ejercicios en clase')
 w <- seq(from = 5, to = 100, by =5)
 ones <- rep(1, 10)
+l
 ```
 
 ```{r}
